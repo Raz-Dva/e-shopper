@@ -1,66 +1,55 @@
 import React from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    NavLink,
+    withRoute
+} from "react-router-dom";
+class MainMenu extends React.Component {
+    render() {
+        return (
+            <div className="mainmenu pull-left">
+                <ul className="nav navbar-nav collapse navbar-collapse">
+                    <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+                    <li><NavLink to="/recommended" activeClassName="active">Recommended</NavLink></li>
+                    <li><NavLink to="/discounts" activeClassName="active">Discounts</NavLink></li>
+                    <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
+                    <li><NavLink to="/about" activeClassName="active">About Us</NavLink></li>
+                </ul>
+            </div>
+        )
+    }
+}
 
 class Header extends React.Component {
     render() {
         return (
             <>
                 <header id="header">
-                    <div class="header-bottom">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="logo pull-left">
-                                        <a href="index.html"
-                                        ><img src="assets/images/home/logo.png" alt=""
-                                            /></a>
+                    <div className="header-bottom">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-sm-3">
+                                    <div className="logo pull-left">
+                                        <a href="/"><img src="assets/images/home/logo.png" alt="" /></a>
                                     </div>
                                 </div>
-                                <div class="col-sm-9">
-                                    <div class="navbar-header">
-                                        <button
-                                            type="button"
-                                            class="navbar-toggle"
-                                            data-toggle="collapse"
-                                            data-target=".navbar-collapse"
-                                        >
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
+                                <div className="col-sm-9">
+                                    <div className="navbar-header">
+                                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                            <span className="sr-only">Toggle navigation</span>
+                                            <span className="icon-bar" />
+                                            <span className="icon-bar" />
+                                            <span className="icon-bar" />
                                         </button>
-                                    </div>
-                                    <div class="mainmenu pull-left">
-                                        <ul class="nav navbar-nav collapse navbar-collapse">
-                                            <li><a href="index.html" class="active">Home</a></li>
-                                            <li class="dropdown">
-                                                <a href="/">Shop<i class="fa fa-angle-down"></i></a>
-                                                <ul role="menu" class="sub-menu">
-                                                    <li><a href="shop.html">Products</a></li>
-                                                    <li>
-                                                        <a href="product-details.html">Product Details</a>
-                                                    </li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                    <li><a href="cart.html">Cart</a></li>
-                                                    <li><a href="login.html">Login</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a href="/">Blog<i class="fa fa-angle-down"></i></a>
-                                                <ul role="menu" class="sub-menu">
-                                                    <li><a href="blog.html">Blog List</a></li>
-                                                    <li><a href="blog-single.html">Blog Single</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="404.html">404</a></li>
-                                            <li><a href="contact-us.html">Contact</a></li>
-                                        </ul>
-                                    </div>
+                                    </div>                                    
+                                        <MainMenu />                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                </header>
-            </>
+                </header> </>
         )
     }
 }

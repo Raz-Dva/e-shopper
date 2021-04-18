@@ -865,10 +865,13 @@ h2.title {
     font-size: 14px;
     font-weight: 400;
     color: #696763;
+    height: 42px;
+    overflow: hidden;
 }
 
 .productinfo img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .productinfo {
