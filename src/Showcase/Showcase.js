@@ -1,8 +1,9 @@
 import React from 'react';
-import Home from '../Home/CardList';
+import CardList from '../CardList/CardList';
 import Recommended from '../Recommended/Recommended';
 import Discounts from '../Discounts/Discounts';
-import SportNike from '../Sportswear/SportswearNike';
+import SportNike from '../Products/Sportswear/SportswearNike';
+import NotFound from '../NotFound/NotFound';
 
 import {
   BrowserRouter as Router,
@@ -20,15 +21,28 @@ class Showcase extends React.Component {
           <Switch>
             <Route exact path="/" render={(props) => {
               return (
-                <Home
-                  produtctsList={this.props.produtctsList}
+                <CardList
+                  produtctsList={this.props.produtctsList.featuresItems}
                 />
               )
             }} />
-            <Route path="/decommended" component={Recommended} />
+            <Route path="/recommended" component={Recommended} />
             <Route path="/discounts" component={Discounts} />
-            <Route path="/sportnike" component={SportNike} />
-            {/* <Route path="/sportadidas" component={SportAdidas} /> */}
+            <Route path="/sportnike" render={(props) => {
+              return (
+                <CardList
+                  produtctsList={this.props.produtctsList.sportSwearNike}
+                />
+              )
+            }} />
+            <Route path="/sportadidas" render={(props) => {
+              return (
+                <CardList
+                  produtctsList={this.props.produtctsList.sportSwearAdidas}
+                />
+              )
+            }} />
+            <Route  component={NotFound} />
 
           </Switch>
         </div>

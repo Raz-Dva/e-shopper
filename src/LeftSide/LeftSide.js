@@ -5,7 +5,7 @@ import {
     Route,
     NavLink,
     withRoute
-  } from "react-router-dom";
+} from "react-router-dom";
 
 class LeftSide extends React.Component {
     render() {
@@ -28,8 +28,7 @@ class LeftSide extends React.Component {
                                     <ul>
                                         <li><NavLink to="/sportnike" activeClassName="active">Nike </NavLink></li>
                                         <li><NavLink to="/sportadidas" activeClassName="active">Adidas </NavLink></li>
-                                        <li><a href="#">Puma</a></li>
-                                        <li><a href="#">ASICS </a></li>
+                                        <li><NavLink to="/sportpuma" activeClassName="active">Puma</NavLink></li>
                                     </ul>
                                 </div>
                             </div>
@@ -46,16 +45,8 @@ class LeftSide extends React.Component {
                             <div id="mens" className="panel-collapse collapse">
                                 <div className="panel-body">
                                     <ul>
-                                        <li><a href="#">Fendi</a></li>
-                                        <li><a href="#">Guess</a></li>
-                                        <li><a href="#">Valentino</a></li>
-                                        <li><a href="#">Dior</a></li>
-                                        <li><a href="#">Versace</a></li>
-                                        <li><a href="#">Armani</a></li>
-                                        <li><a href="#">Prada</a></li>
-                                        <li><a href="#">Dolce and Gabbana</a></li>
-                                        <li><a href="#">Chanel</a></li>
-                                        <li><a href="#">Gucci</a></li>
+                                        <li><NavLink to="/fendi" activeClassName="active">Boss</NavLink></li>
+                                        <li><NavLink to="/guess" activeClassName="active">Guess</NavLink></li>
                                     </ul>
                                 </div>
                             </div>
@@ -72,52 +63,34 @@ class LeftSide extends React.Component {
                             <div id="womens" className="panel-collapse collapse">
                                 <div className="panel-body">
                                     <ul>
-                                        <li><a href="#">Fendi</a></li>
-                                        <li><a href="#">Guess</a></li>
-                                        <li><a href="#">Valentino</a></li>
-                                        <li><a href="#">Dior</a></li>
-                                        <li><a href="#">Versace</a></li>
+
+                                        <li><NavLink to="/valentino" activeClassName="active">Valentino</NavLink></li>
+                                        <li><NavLink to="/dior" activeClassName="active">Dior</NavLink></li>
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="panel panel-default">
                             <div className="panel-heading">
-                                <h4 className="panel-title"><a href="#">Kids</a></h4>
+                                <h4 className="panel-title">
+                                    <NavLink to="/kids" activeClassName="active">Kids</NavLink>
+                                </h4>
                             </div>
                         </div>
                         <div className="panel panel-default">
                             <div className="panel-heading">
-                                <h4 className="panel-title"><a href="#">Fashion</a></h4>
+                                <h4 className="panel-title">
+                                    <NavLink to="/sportadidas" activeClassName="active">Fashion</NavLink>
+                                </h4>
                             </div>
                         </div>
                         <div className="panel panel-default">
                             <div className="panel-heading">
-                                <h4 className="panel-title"><a href="#">Households</a></h4>
-                            </div>
-                        </div>
-                        <div className="panel panel-default">
-                            <div className="panel-heading">
-                                <h4 className="panel-title"><a href="#">Interiors</a></h4>
-                            </div>
-                        </div>
-                        <div className="panel panel-default">
-                            <div className="panel-heading">
-                                <h4 className="panel-title"><a href="#">Clothing</a></h4>
-                            </div>
-                        </div>
-                        <div className="panel panel-default">
-                            <div className="panel-heading">
-                                <h4 className="panel-title"><a href="#">Bags</a></h4>
-                            </div>
-                        </div>
-                        <div className="panel panel-default">
-                            <div className="panel-heading">
-                                <h4 className="panel-title"><a href="#">Shoes</a></h4>
+                                <h4 className="panel-title"><NavLink to="/sportadidas" activeClassName="active">Households</NavLink></h4>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         )
