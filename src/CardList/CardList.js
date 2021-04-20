@@ -16,7 +16,7 @@ class Products extends React.Component {
                                         <div style={{ 'height': '200px', 'overflow': 'hidden' }}>
                                             <img src={
                                                 product?.img ?                                             
-                                                `assets/images/${produtctsList.imgFolder}/${product.img}`:
+                                                `assets/images/shop/${produtctsList.imgFolder}/${product.img}`:
                                                 `assets/images/404/404.png`
                                             }
                                                  alt="" />

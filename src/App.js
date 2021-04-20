@@ -14,34 +14,34 @@ class App extends React.Component {
   state = {
     storeProducts: {
       featuresItems: {
-        imgFolder:'home',
+        imgFolder:'features',
         title: 'Features Items',
         productsItems: [
           {
             name: "Modern Fit Polo Shirt Black Black",
             price: 50,
-            img: "product1.jpg"
+            img: "features-product1.jpg"
           },
           {
             name: "Authentic Hugo Boss Paddy Pro Edition",
             price: 55,
-            img: "product2.jpg"
+            img: "features-product2.jpg"
 
           },
           {
             name: "Easy Polo Black Edition",
             price: 70,
-            img: "product3.jpg"
+            img: "features-product3.jpg"
           },
           {
             name: "Short Sleeve Polo Shirt",
             price: 59,
-            img: "product4.jpg"
+            img: "features-product4.jpg"
           },
           {
             name: "Women's Puff Sleeve Tee Shirt Dress",
             price: 63,
-            img: "product5.jpg"
+            img: "features-product5.jpg"
           }
         ]
       },
@@ -68,28 +68,57 @@ class App extends React.Component {
         ]
       },
       sportSwearAdidas: {
-        title: 'Sport Swear Nike',
-        imgFolder:'nike',
+        title: 'Sport Swear Adidas',
+        imgFolder:'adidas',
         productsItems: [
           {
-            name: "NSW Club Jogger Jersey",
-            price: 90
+            name: "Sportswear 3-Stripes Tape Pants",
+            price: 190,
+            img: "adidas-product3.jpg"
           },
           {
-            name: "Club Men's Training Joggers",
-            price: 68,
-            img: "nike-product2.jpg"
+            name: "Sportswear Innovation Motion Full-Zip",
+            price:88,
+            img: "adidas-product2.jpg"
 
           },
           {
             name: "Shorts Drawstring Zipper Pockets",
-            price: 130
+            price: 94
 
           },
           {
-            name: "Shorts Drawstring Zipper Pockets",
+            name: "Sportswear Cotton Track Suit",
             price: 130,
-            img: "nike-product3.jpg"
+            img: "adidas-product1.jpg"
+
+          }
+        ]
+      },
+      sportSwearPuma: {
+        title: 'Sport Swear Adidas',
+        imgFolder:'puma',
+        productsItems: [
+          {
+            name: "Sportswear 3-Stripes Tape Pants",
+            price: 190,
+            img: "puma-product3.jpg"
+          },
+          {
+            name: "Sportswear Innovation Motion Full-Zip",
+            price:88,
+            img: "puma-product2.jpg"
+
+          },
+          {
+            name: "Shorts Drawstring Zipper Pockets",
+            price: 94
+
+          },
+          {
+            name: "Sportswear Cotton Track Suit",
+            price: 130,
+            img: "puma-product1.jpg"
 
           }
         ]
