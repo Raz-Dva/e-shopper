@@ -23,22 +23,26 @@ class Showcase extends React.Component {
               return (
                 <Card
                   produtctsList={this.props.produtctsList.featuresItems}
+                  category={'featuresItems'}
                 />
               )
             }} />
             <Route path="/recommended" component={Recommended} />
             <Route path="/discounts" component={Discounts} />
-            <Route path="/card/:id" render={(props) => {
-              return (
-                <CardDetails
-                  produtctsList={this.props.produtctsList}
-                />
-              )
-            }} />
+            <Route path="/card/:category/:id" component={CardDetails}
+            //  render={(props) => {
+            //   return (
+            //     <CardDetails
+            //       produtctsList={this.props.produtctsList}                  
+            //     />
+            //   )
+            // }} 
+            />
             <Route path="/sportnike" render={(props) => {
               return (
                 <Card
                   produtctsList={this.props.produtctsList.sportSwearNike}
+                  category={'sportSwearNike'}
                 />
               )
             }} />
@@ -47,6 +51,7 @@ class Showcase extends React.Component {
               return (
                 <Card
                   produtctsList={this.props.produtctsList.sportSwearAdidas}
+                  category={'sportSwearAdidas'}
                 />
               )
             }} />
@@ -54,6 +59,7 @@ class Showcase extends React.Component {
               return (
                 <Card
                   produtctsList={this.props.produtctsList.sportSwearPuma}
+                  category={'sportSwearPuma'}
                 />
               )
             }} />

@@ -2,9 +2,9 @@
 import React from 'react';
 
 class Card extends React.Component {
-    render(){
-        return(
-            <div className="col-sm-9 padding-right">
+  render() {
+    return (
+      <div className="col-sm-9 padding-right">
         <div className="product-details">
           {/*product-details*/}
           <div className="col-sm-5">
@@ -328,7 +328,7 @@ class Card extends React.Component {
         </div>
         {/*/recommended_items*/}
       </div>
-        )
-    }
+    )
+  }
 };
 export default Card
