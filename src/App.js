@@ -108,7 +108,7 @@ class App extends React.Component {
         ]
       },
       sportSwearPuma: {
-        title: 'Sport Swear Adidas',
+        title: 'Sport Swear Puma',
         imgFolder: 'puma',
         productsItems: [
           {

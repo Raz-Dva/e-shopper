@@ -1,10 +1,24 @@
 
 import React from 'react';
 
-class Card extends React.Component {
+class CardDetails extends React.Component {
   render() {
+    const produtctsList = this.props.produtctsList;
+    const id = this.props.match.params.id;
+    const category = this.props.match.params.category;
+
+    // produtctsList[category].productsItems.forEach((product, ind)=>{
+    //   if(product.id == id) console.log(id)
+
+    // })
+
+    // for(let i=0; i<)
+    
+    // console.log()
+
+    
     return (
-      <div className="col-sm-9 padding-right">
+      <div className="col-sm-12 padding-right">
         <div className="product-details">
           {/*product-details*/}
           <div className="col-sm-5">
@@ -227,108 +241,11 @@ class Card extends React.Component {
         <div className="recommended_items">
           {/*recommended_items*/}
           <h2 className="title text-center">recommended items</h2>
-          <div id="recommended-item-carousel" className="carousel slide" data-ride="carousel">
-            <div className="carousel-inner">
-              <div className="item active">
-                <div className="col-sm-4">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/recommend1.jpg" alt="" />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <button type="button" className="btn btn-default add-to-cart">
-                          <i className="fa fa-shopping-cart" />Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-4">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/recommend2.jpg" alt="" />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <button type="button" className="btn btn-default add-to-cart">
-                          <i className="fa fa-shopping-cart" />Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-4">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/recommend3.jpg" alt="" />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <button type="button" className="btn btn-default add-to-cart">
-                          <i className="fa fa-shopping-cart" />Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="col-sm-4">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/recommend1.jpg" alt="" />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <button type="button" className="btn btn-default add-to-cart">
-                          <i className="fa fa-shopping-cart" />Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-4">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/recommend2.jpg" alt="" />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <button type="button" className="btn btn-default add-to-cart">
-                          <i className="fa fa-shopping-cart" />Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-4">
-                  <div className="product-image-wrapper">
-                    <div className="single-products">
-                      <div className="productinfo text-center">
-                        <img src="images/home/recommend3.jpg" alt="" />
-                        <h2>$56</h2>
-                        <p>Easy Polo Black Edition</p>
-                        <button type="button" className="btn btn-default add-to-cart">
-                          <i className="fa fa-shopping-cart" />Add to cart
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a className="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-              <i className="fa fa-angle-left" />
-            </a>
-            <a className="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-              <i className="fa fa-angle-right" />
-            </a>
-          </div>
+
         </div>
         {/*/recommended_items*/}
       </div>
     )
   }
 };
-export default Card
+export default CardDetails

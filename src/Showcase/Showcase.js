@@ -29,14 +29,15 @@ class Showcase extends React.Component {
             }} />
             <Route path="/recommended" component={Recommended} />
             <Route path="/discounts" component={Discounts} />
-            <Route path="/card/:category/:id" component={CardDetails}
-            //  render={(props) => {
-            //   return (
-            //     <CardDetails
-            //       produtctsList={this.props.produtctsList}                  
-            //     />
-            //   )
-            // }} 
+            <Route path="/card/:category/:id" 
+             render={(props) => {
+              return (
+                <CardDetails
+                {...props}
+                  produtctsList={this.props.produtctsList}                  
+                />
+              )
+            }} 
             />
             <Route path="/sportnike" render={(props) => {
               return (
