@@ -1,10 +1,7 @@
 import React from 'react';
+// import logo from '../../public/assets/images/home/logo.png'; 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    NavLink,
-    withRoute
+    NavLink
 } from "react-router-dom";
 class MainMenu extends React.Component {
     render() {
@@ -32,7 +29,7 @@ class Header extends React.Component {
                             <div className="row">
                                 <div className="col-sm-3">
                                     <div className="logo pull-left">
-                                        <a href="/"><img src="assets/images/home/logo.png" alt="" /></a>
+                                        <a href="/"><img src="/assets/images/home/logo.png" alt="" /></a>
                                     </div>
                                 </div>
                                 <div className="col-sm-9">
@@ -55,3 +52,4 @@ class Header extends React.Component {
 }
 
 export default Header;
+

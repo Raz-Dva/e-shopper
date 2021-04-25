@@ -493,6 +493,10 @@ ul.sub-menu {
     background: none;
     color: #FE980F;
 }
+.single-widget ul >li{
+    display: inline-block;
+    margin-right: 25px;
+}
 
 .searchform input {
     border: 1px solid #DDDDDD;
@@ -876,6 +880,9 @@ h2.title {
 
 .productinfo {
     position: relative;
+    height: 320px;
+    overflow: hidden;
+
 }
 
 .product-overlay {
@@ -1034,6 +1041,10 @@ h2.title {
     padding-left: 0;
 }
 
+#recommended-item-carousel .productinfo>img{
+    max-width: 150px;
+    max-height: 150px;
+}
 .recommended-item-control {
     position: absolute;
     top: 41%;
@@ -1156,12 +1167,17 @@ h2.title {
 
 .view-product {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 350px;
+    overflow: hidden;
 }
 
 .view-product img {
-    border: 1px solid #F7F7F0;
-    height: 380px;
-    width: 100%;
+    border: 1px solid #dadad3;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .view-product h3 {
@@ -1203,11 +1219,9 @@ h2.title {
 }
 
 .product-information {
-    border: 1px solid #F7F7F0;
+    border: 1px solid  #dadad3;
     overflow: hidden;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    padding-top: 60px;
+    padding:30px 20px 50px 30px;
     position: relative;
 }
 
@@ -1281,7 +1295,7 @@ h2.title {
 }
 
 .shop-details-tab {
-    border: 1px solid #F7F7F0;
+    border: 1px solid  #dadad3;
     margin-bottom: 75px;
     margin-left: 15px;
     margin-right: 15px;

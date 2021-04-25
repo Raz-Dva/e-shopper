@@ -26,9 +26,9 @@ class LeftSide extends React.Component {
                             <div id="sportswear" className="panel-collapse collapse">
                                 <div className="panel-body">
                                     <ul>
-                                        <li><NavLink to="/sportnike" activeClassName="active">Nike </NavLink></li>
-                                        <li><NavLink to="/sportadidas" activeClassName="active">Adidas </NavLink></li>
-                                        <li><NavLink to="/sportpuma" activeClassName="active">Puma</NavLink></li>
+                                        <li><NavLink to="/sportSwearNike" activeClassName="active">Nike </NavLink></li>
+                                        <li><NavLink to="/sportSwearAdidas" activeClassName="active">Adidas </NavLink></li>
+                                        <li><NavLink to="/sportSwearPuma" activeClassName="active">Puma</NavLink></li>
                                     </ul>
                                 </div>
                             </div>

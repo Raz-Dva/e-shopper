@@ -29,7 +29,7 @@ class Showcase extends React.Component {
             }} />
             <Route path="/recommended" component={Recommended} />
             <Route path="/discounts" component={Discounts} />
-            <Route path="/card/:category/:id" 
+            <Route exact path="/:category/:id" 
              render={(props) => {
               return (
                 <CardDetails
@@ -39,7 +39,7 @@ class Showcase extends React.Component {
               )
             }} 
             />
-            <Route path="/sportnike" render={(props) => {
+            <Route path="/sportSwearNike" render={(props) => {
               return (
                 <Card
                   produtctsList={this.props.produtctsList.sportSwearNike}
@@ -48,7 +48,7 @@ class Showcase extends React.Component {
               )
             }} />
             
-            <Route path="/sportadidas" render={(props) => {
+            <Route path="/sportSwearAdidas" render={(props) => {
               return (
                 <Card
                   produtctsList={this.props.produtctsList.sportSwearAdidas}
@@ -56,7 +56,7 @@ class Showcase extends React.Component {
                 />
               )
             }} />
-            <Route path="/sportpuma" render={(props) => {
+            <Route path="/sportSwearPuma" render={(props) => {
               return (
                 <Card
                   produtctsList={this.props.produtctsList.sportSwearPuma}

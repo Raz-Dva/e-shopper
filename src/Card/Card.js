@@ -24,8 +24,8 @@ class Products extends React.Component {
                                         </div>
                                         <h2>${product.price}</h2>
                                         <p>{product.name}</p>
-                                        <a href={`/card/${category}/${product.id}`} className="btn btn-default add-to-cart">
-                                            Show Cart</a>
+                                        <a href={`/${category}/${product.id}`} className="btn btn-default add-to-cart">
+                                            Show Card</a>
                                     </div>
                                 </div>
                             </div>
