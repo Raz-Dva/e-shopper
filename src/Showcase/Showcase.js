@@ -6,11 +6,8 @@ import Discounts from '../Discounts/Discounts';
 import NotFound from '../NotFound/NotFound';
 
 import {
-  BrowserRouter as Router,
   Switch,
-  Route,
-  NavLink,
-  withRoute
+  Route
 } from "react-router-dom";
 
 class Showcase extends React.Component {

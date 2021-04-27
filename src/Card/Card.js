@@ -1,7 +1,7 @@
 import React from 'react';
+import  {NavLink } from "react-router-dom";
 
 class Products extends React.Component {
-
     render() {
         const produtctsList = this.props.produtctsList;
         let category = this.props.category;
@@ -14,7 +14,7 @@ class Products extends React.Component {
                             <div className="product-image-wrapper">
                                 <div className="single-products">
                                     <div className="productinfo text-center">
-                                        <div style={{ 'height': '200px', 'overflow': 'hidden' }}>
+                                        <div style={{ 'height': '200px', 'overflow': 'hidden', 'paddingTop':'10px' }}>
                                             <img src={
                                                 product?.img ?
                                                     `assets/images/shop/${produtctsList.imgFolder}/${product.img}` :
@@ -24,8 +24,8 @@ class Products extends React.Component {
                                         </div>
                                         <h2>${product.price}</h2>
                                         <p>{product.name}</p>
-                                        <a href={`/${category}/${product.id}`} className="btn btn-default add-to-cart">
-                                            Show Card</a>
+                                        <NavLink to={`/${category}/${product.id}`} className="btn btn-default add-to-cart">
+                                            Show Card</NavLink>
                                     </div>
                                 </div>
                             </div>

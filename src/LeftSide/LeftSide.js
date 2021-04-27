@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    NavLink,
-    withRoute
-} from "react-router-dom";
+import  {NavLink } from "react-router-dom";
 
 class LeftSide extends React.Component {
     render() {

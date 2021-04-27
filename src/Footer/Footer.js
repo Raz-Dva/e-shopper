@@ -29,12 +29,12 @@ class Footer extends React.Component {
                 <div className="single-widget">
                   <h2>Navigation</h2>
                   <ul className="nav nav-pills nav-stacked">
-                    <li><a href="#">Company Information</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Store Location</a></li>
-                    <li><a href="#">Affillate Program</a></li>
-                    <li><a href="#">Copyright</a></li>
-                  </ul>
+                  <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+                    <li><NavLink to="/recommended" activeClassName="active">Recommended</NavLink></li>
+                    <li><NavLink to="/discounts" activeClassName="active">Discounts</NavLink></li>
+                    <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
+                    <li><NavLink to="/about" activeClassName="active">About Us</NavLink></li>
+                </ul>
                 </div>
               </div>
             </div>

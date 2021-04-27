@@ -6,7 +6,7 @@ import HeaderBanner from './Header/Header-banner'
 import Main from './Main/Main'
 import Footer from './Footer/Footer'
 import {
-  BrowserRouter as Router
+  BrowserRouter 
 } from "react-router-dom";
 
 class App extends React.Component {
@@ -183,7 +183,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Router>
+        <BrowserRouter>
           <Header />
           <section>
             <div className="container">
@@ -197,7 +197,7 @@ class App extends React.Component {
           </section>
           <Footer/>
 
-        </Router>
+        </BrowserRouter>
       </>
     )
   }

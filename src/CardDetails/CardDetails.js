@@ -1,6 +1,9 @@
 
 import React from 'react';
+import  {NavLink } from "react-router-dom";
+
 import NotFound from '../NotFound/NotFound';
+
 
 const CardDetailsContent = (props) => {
   // console.log(props.product.title)
@@ -56,21 +59,22 @@ const CardDetailsContent = (props) => {
         <div id="recommended-item-carousel" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">
             <div className="item active">
-
               {props.arrRandomProductsActive.map((product, index) => {
                 return (<div className="col-sm-4" key={index}>
                   <div className="product-image-wrapper">
                     <div className="single-products">
                       <div className="productinfo text-center">
-                        <img src={
-                          product?.img ?
-                            `/assets/images/shop/${product.productFolder}/${product.img}` :
-                            `/assets/images/404/404.png`
-                        } alt="" />
+                        <div className="boxImage">
+                          <img src={
+                            product?.img ?
+                              `/assets/images/shop/${product.productFolder}/${product.img}` :
+                              `/assets/images/404/404.png`
+                          } alt="" />
+                        </div>
                         <h2>${product.price}</h2>
                         <p>{product.name}</p>
-                        <a href={`/${product.category}/${product.id}`} className="btn btn-default add-to-cart">
-                          Show Card</a>
+                        <NavLink to={`/${product.category}/${product.id}`} className="btn btn-default add-to-cart">
+                          Show Card</NavLink>
                       </div>
                     </div>
                   </div>
@@ -83,15 +87,17 @@ const CardDetailsContent = (props) => {
                   <div className="product-image-wrapper">
                     <div className="single-products">
                       <div className="productinfo text-center">
-                        <img src={
-                          product?.img ?
-                            `/assets/images/shop/${product.productFolder}/${product.img}` :
-                            `/assets/images/404/404.png`
-                        } alt="" />
+                        <div className="boxImage">
+                          <img src={
+                            product?.img ?
+                              `/assets/images/shop/${product.productFolder}/${product.img}` :
+                              `/assets/images/404/404.png`
+                          } alt="" />
+                        </div>
                         <h2>${product.price}</h2>
                         <p>{product.name}</p>
-                        <a href={`/${product.category}/${product.id}`} className="btn btn-default add-to-cart">
-                          Show Card</a>
+                        <NavLink to={`/${product.category}/${product.id}`} className="btn btn-default add-to-cart">
+                          Show Card</NavLink>
                       </div>
                     </div>
                   </div>
