@@ -63,7 +63,10 @@ a#scrollUp {
 a#scrollUp i {
   font-size: 30px;
 }
-
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 /*************************
 *******Header CSS******
 **************************/
@@ -2456,4 +2459,11 @@ textarea {
 
 .contact-info .social-networks ul li a:hover {
   color: #fe980f;
+}
+.text-aboutUs{
+  margin-top:50px;
+  margin-bottom:120px;
+  font-weight: normal;
+  font-size:20px;
+  line-height:1.5;
 }

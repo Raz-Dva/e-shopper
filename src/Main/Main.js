@@ -15,7 +15,7 @@ import {
 class Main extends React.Component {
     render() {
         return (
-            <div>
+            <>
                 <Switch>
                     <Route path="/about" component={AboutUs} />
                     <Route path="/contact" component={Contact} />
@@ -26,7 +26,7 @@ class Main extends React.Component {
                         </Showcase>
                     </Route>
                 </Switch>
-            </div>
+            </>
         )
     }
 };
