@@ -1,6 +1,5 @@
 import React from 'react';
-import Map from './GoogleMap';
-
+import SimpleMap from './MapGoogle';
 
 class Contact extends React.Component {
     render() {
@@ -10,7 +9,9 @@ class Contact extends React.Component {
                     <div className="col-sm-12">
                         <h2 className="title text-center">Contact <strong>Us</strong></h2>
                         <div id="gmap" className="contact-map">
-                            <Map isMarkerShown />
+
+                            <SimpleMap/>
+
                         </div>
                     </div>
                 </div>
