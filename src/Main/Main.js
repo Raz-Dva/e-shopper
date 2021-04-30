@@ -5,11 +5,8 @@ import AboutUs from '../AboutUs/AboutUs';
 import Contact from '../Contacts/Contacts';
 import Showcase from '../Showcase/Showcase';
 import {
-    BrowserRouter as Router,
     Switch,
-    Route,
-    NavLink,
-    withRoute
+    Route
 } from "react-router-dom";
 
 class Main extends React.Component {

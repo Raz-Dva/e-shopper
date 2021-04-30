@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom'
 import GoogleMapReact from 'google-map-react';
-import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
- 
-const AnyReactComponent = ({ text})=><div>{text}</div>;
- 
-class SimpleMap extends React.Component{
+import icon from './map-marker.svg'
+// import vector from './../../public/assets/images/home/map-marker.svg';
+
+const AnyReactComponent = ({ text }) => <div style={{'backgroundImage':`url(${icon})`}}>{text}</div>;
+
+class SimpleMap extends React.Component {
   static defaultProps = {
     center: {
       lat: 59.95,
@@ -13,8 +14,10 @@ class SimpleMap extends React.Component{
     },
     zoom: 11
   };
+
   componentDidMount() {
     this.loadMap();
+
   }
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.google !== this.props.google) {
@@ -24,8 +27,7 @@ class SimpleMap extends React.Component{
 
   loadMap() {
     if (this.props && this.props.google) {
-      // google is available
-      const {google} = this.props;
+      const { google } = this.props;
       const maps = google.maps;
 
       const mapRef = this.refs.map;
@@ -40,28 +42,29 @@ class SimpleMap extends React.Component{
         zoom: zoom
       })
       this.map = new maps.Map(node, mapConfig);
-    }}
+    }
+  }
 
- 
+
   render() {
+  console.log(this.props)
+
     return (
-      // Important! Always set the container height explicitly
       <div style={{ height: '300px', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyCcbtw2lQHyWXkKwICgtcSPH6oCTEhukBo' }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
-        >
-             <Marker lat={59.955413} lng={30.337844} />
-          {/* <AnyReactComponent
+        >        
+          <AnyReactComponent         
             lat={59.955413}
             lng={30.337844}
-            text="My Marker"
-          /> */}
+            text=""
+          />
         </GoogleMapReact>
       </div>
     );
   }
 }
- 
+
 export default SimpleMap;

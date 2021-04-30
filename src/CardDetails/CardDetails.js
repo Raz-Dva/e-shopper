@@ -1,12 +1,9 @@
 
 import React from 'react';
 import  {NavLink } from "react-router-dom";
-
 import NotFound from '../NotFound/NotFound';
 
-
 const CardDetailsContent = (props) => {
-  // console.log(props.product.title)
   return (
     <>
       <div className="product-details">
@@ -118,11 +115,6 @@ const CardDetailsContent = (props) => {
   )
 };
 
-const notFoundProduct = () => {
-  return (
-    <h2>This product was not found.</h2>
-  )
-}
 
 class CardDetails extends React.Component {
   render() {
@@ -156,7 +148,7 @@ class CardDetails extends React.Component {
     function findIdProduct(categorylist) {
       if (!categorylist) return false
       for (let i = 0; i < categorylist.length; i++) {
-        if (categorylist[i].id == id) {
+        if (categorylist[i].id === id) {
           product = categorylist[i];
           break
         } else { product = null }
