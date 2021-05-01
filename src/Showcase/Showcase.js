@@ -24,8 +24,6 @@ class Showcase extends React.Component {
                 />
               )
             }} />
-            <Route path="/recommended" component={Recommended} />
-            <Route path="/discounts" component={Discounts} />
             <Route exact path="/:category/:id" 
              render={(props) => {
               return (
@@ -36,7 +34,22 @@ class Showcase extends React.Component {
               )
             }} 
             />
-            <Route path="/sportSwearNike" render={(props) => {
+            <Route path="/recommended" render={(props) => {
+              return (
+                <Recommended
+                  produtctsList={this.props.produtctsList}
+                />
+              )
+            }} />
+            <Route path="/discounts" render={(props) => {
+              return (
+                <Discounts
+                  produtctsList={this.props.produtctsList}
+                />
+              )
+            }} />
+            
+            <Route  path="/sportSwearNike" render={(props) => {
               return (
                 <Card
                   produtctsList={this.props.produtctsList.sportSwearNike}
@@ -60,9 +73,9 @@ class Showcase extends React.Component {
                   category={'sportSwearPuma'}
                 />
               )
-            }} />
+            }} />          
+            
             <Route  component={NotFound} />
-
           </Switch>
         </div>
       </div>

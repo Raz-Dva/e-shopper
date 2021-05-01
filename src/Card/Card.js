@@ -1,5 +1,5 @@
 import React from 'react';
-import  {NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Products extends React.Component {
     render() {
@@ -14,7 +14,7 @@ class Products extends React.Component {
                             <div className="product-image-wrapper">
                                 <div className="single-products">
                                     <div className="productinfo text-center">
-                                        <div style={{ 'height': '200px', 'overflow': 'hidden', 'paddingTop':'10px' }}>
+                                        <div className={"wrap-img_card" + (product.sale ? " sale" : "")}>
                                             <img src={
                                                 product?.img ?
                                                     `assets/images/shop/${produtctsList.imgFolder}/${product.img}` :

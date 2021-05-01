@@ -33,6 +33,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Puma',
             price: 55,
+            sale:50,
             img: "features-product2.jpg"
           },
           {
@@ -49,6 +50,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Boss',
             price: 59,
+            sale:13,
             img: "features-product4.jpg"
           },
           {
@@ -71,7 +73,7 @@ class App extends React.Component {
             name: "NSW Club Jogger Jersey",
             condition: 'Premium',
             availability: false,
-            brand: 'Nike',
+            brand: 'Nike',            
             price: 150
           },
           {
@@ -79,7 +81,7 @@ class App extends React.Component {
             name: "Club Men's Training Joggers",
             availability: true,
             brand: 'Nike',
-            price: 155,
+            price: 155,            
             img: "nike-product2.jpg"
 
           },
@@ -89,6 +91,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Nike',
             price: 110,
+            sale:10,
             img: "nike-product3.jpg"
 
           }
@@ -104,6 +107,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Adidas',
             price: 190,
+            sale:5,
             img: "adidas-product3.jpg"
           },
           {
@@ -112,14 +116,15 @@ class App extends React.Component {
             condition: 'Premium',
             availability: true,
             brand: 'Adidas',
-            price: 88,
+            price: 88,            
             img: "adidas-product2.jpg"
 
           },
           {
             id: 3,
             name: "Shorts Drawstring Zipper Pockets",
-            condition: 'New', availability: false,
+            condition: 'New',
+            availability: false,
             brand: 'Adidas',
             price: 94
 
@@ -154,6 +159,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Puma',
             price: 88,
+            sale:20,
             img: "puma-product2.jpg"
 
           },

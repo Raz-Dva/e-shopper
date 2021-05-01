@@ -890,6 +890,29 @@ h2.title {
 .boxImage {
   height: 160px;
   overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+.wrap-img_card {
+  height: 200px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+.sale:after {
+  content: "Sale";
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color:#fff;
+  position: absolute;
+  width: 15%;
+  max-width: 40px;
+  min-width: 25px;
+  min-height: 22px;
+  background-color: #FE1A0F;
+  top: 0;
+  left: 0;
 }
 .product-overlay {
   background: rgba(254, 152, 15, 0.8);
@@ -1179,6 +1202,7 @@ h2.title {
   align-items: center;
   max-height: 350px;
   overflow: hidden;
+  position: relative;
 }
 
 .view-product img {
@@ -2458,10 +2482,10 @@ textarea {
 .contact-info .social-networks ul li a:hover {
   color: #fe980f;
 }
-.text-aboutUs{
-  margin-top:50px;
-  margin-bottom:120px;
+.text-aboutUs {
+  margin-top: 50px;
+  margin-bottom: 120px;
   font-weight: normal;
-  font-size:20px;
-  line-height:1.5;
+  font-size: 20px;
+  line-height: 1.5;
 }

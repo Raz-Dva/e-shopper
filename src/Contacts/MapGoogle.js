@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import GoogleMapReact from 'google-map-react';
-import icon from './map-marker.svg'
-// import vector from './../../public/assets/images/home/map-marker.svg';
 
-const AnyReactComponent = ({ text }) => <div style={{'backgroundImage':`url(${icon})`}}>{text}</div>;
+const AnyReactComponent = ({ text }) => <div >{text}</div>;
 
 class SimpleMap extends React.Component {
   static defaultProps = {
@@ -44,19 +42,15 @@ class SimpleMap extends React.Component {
       this.map = new maps.Map(node, mapConfig);
     }
   }
-
-
   render() {
-  console.log(this.props)
-
     return (
       <div style={{ height: '300px', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyCcbtw2lQHyWXkKwICgtcSPH6oCTEhukBo' }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
-        >        
-          <AnyReactComponent         
+        >
+          <AnyReactComponent
             lat={59.955413}
             lng={30.337844}
             text=""

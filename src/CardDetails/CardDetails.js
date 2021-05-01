@@ -1,6 +1,6 @@
 
 import React from 'react';
-import  {NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import NotFound from '../NotFound/NotFound';
 
 const CardDetailsContent = (props) => {
@@ -8,7 +8,7 @@ const CardDetailsContent = (props) => {
     <>
       <div className="product-details">
         <div className="col-sm-5">
-          <div className="view-product">
+          <div className={"view-product" + (props.product.sale ? " sale" : "")}>
             <img
               src={
                 props.product?.img ?
@@ -22,14 +22,13 @@ const CardDetailsContent = (props) => {
             <img src="images/product-details/new.jpg" className="newarrival" alt="" />
             <h2>{props.product.name}</h2>
             <p>Web ID: {props.product.id}</p>
-            <img src="images/product-details/rating.png" alt="" />
             <span>
               <span>US ${props.product.price}</span>
             </span>
             <p><b>Availability:</b>{props.product.availability ? ' yes' : ' no'}</p>
             {props.product.condition ? <p><b>Condition:</b> {props.product.condition} </p> : null}
-
             <p><b>Brand:</b> {props.product.brand} </p>
+            {props.product.sale ? <p><b>Sale: </b> {props.product.sale}%</p>: null}            
           </div>
         </div>
       </div>
@@ -61,7 +60,7 @@ const CardDetailsContent = (props) => {
                   <div className="product-image-wrapper">
                     <div className="single-products">
                       <div className="productinfo text-center">
-                        <div className="boxImage">
+                        <div className={"boxImage" + (product.sale ? " sale" : "")}>
                           <img src={
                             product?.img ?
                               `/assets/images/shop/${product.productFolder}/${product.img}` :
@@ -84,7 +83,7 @@ const CardDetailsContent = (props) => {
                   <div className="product-image-wrapper">
                     <div className="single-products">
                       <div className="productinfo text-center">
-                        <div className="boxImage">
+                        <div className={"boxImage" + (product.sale ? " sale" : "")}>
                           <img src={
                             product?.img ?
                               `/assets/images/shop/${product.productFolder}/${product.img}` :
@@ -114,11 +113,8 @@ const CardDetailsContent = (props) => {
     </>
   )
 };
-
-
 class CardDetails extends React.Component {
   render() {
-
     const produtctsList = this.props.produtctsList;
     const id = this.props.match.params.id;
     const category = this.props.match.params.category;
@@ -127,33 +123,37 @@ class CardDetails extends React.Component {
     let product = null;
     const arrRandomProducts = [];
     const arrRandomProductsActive = [];
-    const randomProducts = () => {
-      let lengthCategory = Object.getOwnPropertyNames(produtctsList).length;
-      const arrCategories = Object.keys(produtctsList);
+
+    const randomProducts = (produtcts) => {
+      let lengthCategory = Object.getOwnPropertyNames(produtcts).length;
+      const arrCategories = Object.keys(produtcts);
       const randomNum = (max) => { return Math.floor(Math.random() * max); }
       let randomIndCategory = randomNum(lengthCategory);
       const categoryName = arrCategories[randomIndCategory];
-      const categoryItem = produtctsList[categoryName];
+      const categoryItem = produtcts[categoryName];
       let randomIndProduct = randomNum(categoryItem.productsItems.length);
       const randomProduct = categoryItem.productsItems[randomIndProduct];
       randomProduct.productFolder = categoryItem.imgFolder;
       randomProduct.category = categoryName;
       return randomProduct
-    }
+    };
+
     for (let i = 0; i < 3; i++) {
-      arrRandomProducts.push(randomProducts());
-      arrRandomProductsActive.push(randomProducts())
+      arrRandomProducts.push(randomProducts(produtctsList));
+      arrRandomProductsActive.push(randomProducts(produtctsList))
     }
+    console.log(arrRandomProducts, arrRandomProductsActive)
 
     function findIdProduct(categorylist) {
       if (!categorylist) return false
       for (let i = 0; i < categorylist.length; i++) {
-        if (categorylist[i].id === id) {
+        if (categorylist[i].id == id) {
           product = categorylist[i];
           break
         } else { product = null }
       }
     }
+
     findIdProduct(categoryList)
 
     return (
