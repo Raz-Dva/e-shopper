@@ -142,7 +142,6 @@ class CardDetails extends React.Component {
       arrRandomProducts.push(randomProducts(produtctsList));
       arrRandomProductsActive.push(randomProducts(produtctsList))
     }
-    console.log(arrRandomProducts, arrRandomProductsActive)
 
     function findIdProduct(categorylist) {
       if (!categorylist) return false

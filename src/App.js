@@ -174,7 +174,8 @@ class App extends React.Component {
           {
             id: 4,
             name: "Sportswear Cotton Track Suit",
-            condition: 'New', availability: false,
+            condition: 'New',
+            availability: false,
             brand: 'Puma',
             price: 130,
             img: "puma-product1.jpg"

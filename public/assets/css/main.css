@@ -1196,7 +1196,6 @@ h2.title {
 .view-product {
   border: 1px solid #dadad3;
   padding: 15px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
