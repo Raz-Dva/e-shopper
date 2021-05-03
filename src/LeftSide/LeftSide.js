@@ -39,7 +39,7 @@ class LeftSide extends React.Component {
                             <div id="mens" className="panel-collapse collapse">
                                 <div className="panel-body">
                                     <ul>
-                                        <li><NavLink to="/fendi" activeClassName="active">Boss</NavLink></li>
+                                        <li><NavLink to="/bossMan" activeClassName="active">Boss</NavLink></li>
                                         <li><NavLink to="/guess" activeClassName="active">Guess</NavLink></li>
                                     </ul>
                                 </div>

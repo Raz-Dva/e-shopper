@@ -73,7 +73,15 @@ class Showcase extends React.Component {
                   category={'sportSwearPuma'}
                 />
               )
-            }} />          
+            }} />       
+            <Route path="/bossMan" render={(props) => {
+              return (
+                <Card
+                  produtctsList={this.props.produtctsList.bossMan}
+                  category={'bossMan'}
+                />
+              )
+            }} />      
             
             <Route  component={NotFound} />
           </Switch>

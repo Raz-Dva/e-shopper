@@ -6,7 +6,7 @@ import HeaderBanner from './Header/Header-banner'
 import Main from './Main/Main'
 import Footer from './Footer/Footer'
 import {
-  BrowserRouter 
+  BrowserRouter
 } from "react-router-dom";
 
 class App extends React.Component {
@@ -33,7 +33,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Puma',
             price: 55,
-            sale:50,
+            sale: 50,
             img: "features-product2.jpg"
           },
           {
@@ -50,7 +50,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Boss',
             price: 59,
-            sale:13,
+            sale: 13,
             img: "features-product4.jpg"
           },
           {
@@ -73,7 +73,7 @@ class App extends React.Component {
             name: "NSW Club Jogger Jersey",
             condition: 'Premium',
             availability: false,
-            brand: 'Nike',            
+            brand: 'Nike',
             price: 150
           },
           {
@@ -81,7 +81,7 @@ class App extends React.Component {
             name: "Club Men's Training Joggers",
             availability: true,
             brand: 'Nike',
-            price: 155,            
+            price: 155,
             img: "nike-product2.jpg"
 
           },
@@ -91,7 +91,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Nike',
             price: 110,
-            sale:10,
+            sale: 10,
             img: "nike-product3.jpg"
 
           }
@@ -107,7 +107,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Adidas',
             price: 190,
-            sale:5,
+            sale: 5,
             img: "adidas-product3.jpg"
           },
           {
@@ -116,7 +116,7 @@ class App extends React.Component {
             condition: 'Premium',
             availability: true,
             brand: 'Adidas',
-            price: 88,            
+            price: 88,
             img: "adidas-product2.jpg"
 
           },
@@ -159,7 +159,7 @@ class App extends React.Component {
             availability: true,
             brand: 'Puma',
             price: 88,
-            sale:20,
+            sale: 20,
             img: "puma-product2.jpg"
 
           },
@@ -179,6 +179,31 @@ class App extends React.Component {
             brand: 'Puma',
             price: 130,
             img: "puma-product1.jpg"
+
+          }
+        ]
+      },
+      bossMan: {
+        title: 'Boss Man',
+        imgFolder: 'boss',
+        productsItems: [
+          {
+            id: 1,
+            name: "Polo Hugo Boss",
+            condition: 'Premium',
+            availability: true,
+            brand: 'Boss',
+            price: 190,
+            img: "boss-product1.jpg"
+          },
+          {
+            id: 2,
+            name: "Green Solid Polo",
+            availability: true,
+            brand: 'Boss',
+            price: 88,
+            sale: 20,
+            img: "boss-product2.jpg"
 
           }
         ]
@@ -202,7 +227,7 @@ class App extends React.Component {
               </div>
             </div>
           </section>
-          <Footer/>
+          <Footer />
 
         </BrowserRouter>
       </>
