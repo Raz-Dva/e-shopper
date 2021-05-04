@@ -146,7 +146,7 @@ class CardDetails extends React.Component {
     function findIdProduct(categorylist) {
       if (!categorylist) return false
       for (let i = 0; i < categorylist.length; i++) {
-        if (categorylist[i].id == id) {
+        if (categorylist[i].id === +id) {
           product = categorylist[i];
           break
         } else { product = null }

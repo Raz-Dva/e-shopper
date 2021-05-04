@@ -207,6 +207,31 @@ class App extends React.Component {
 
           }
         ]
+      },
+      guessMan:{
+        title: 'Guess Man',
+        imgFolder: 'guess',
+        productsItems: [
+          {
+            id: 1,
+            name: "Eco Roy Fleece Shorts",
+            condition: 'New',
+            availability: true,
+            brand: 'Guess',
+            price: 110,
+            img: "guess-product1.jpg"
+          },
+          {
+            id: 2,
+            name: " Tie-Dye Logo Tee",
+            availability: true,
+            brand: 'Guess',
+            price: 188,
+            sale: 60,
+            img: "guess-product2.jpg"
+
+          }
+        ]
       }
     }
   }

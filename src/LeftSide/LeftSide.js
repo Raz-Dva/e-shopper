@@ -40,7 +40,7 @@ class LeftSide extends React.Component {
                                 <div className="panel-body">
                                     <ul>
                                         <li><NavLink to="/bossMan" activeClassName="active">Boss</NavLink></li>
-                                        <li><NavLink to="/guess" activeClassName="active">Guess</NavLink></li>
+                                        <li><NavLink to="/guessMan" activeClassName="active">Guess</NavLink></li>
                                     </ul>
                                 </div>
                             </div>
