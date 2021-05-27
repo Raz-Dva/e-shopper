@@ -164,14 +164,6 @@ class App extends React.Component {
 
           },
           {
-            id: 3,
-            name: "Shorts Drawstring Zipper Pockets",
-            availability: true,
-            brand: 'Puma',
-            price: 94
-
-          },
-          {
             id: 4,
             name: "Sportswear Cotton Track Suit",
             condition: 'New',
@@ -179,6 +171,14 @@ class App extends React.Component {
             brand: 'Puma',
             price: 130,
             img: "puma-product1.jpg"
+
+          },
+          {
+            id: 3,
+            name: "Shorts Drawstring Zipper Pockets",
+            availability: true,
+            brand: 'Puma',
+            price: 94
 
           }
         ]
@@ -208,7 +208,7 @@ class App extends React.Component {
           }
         ]
       },
-      guessMan:{
+      guessMan: {
         title: 'Guess Man',
         imgFolder: 'guess',
         productsItems: [
@@ -229,6 +229,108 @@ class App extends React.Component {
             price: 188,
             sale: 60,
             img: "guess-product2.jpg"
+
+          }
+        ]
+      },
+      valentinoWomans: {
+        title: 'Valentino Womans',
+        imgFolder: 'valentino',
+        productsItems: [
+          {
+            id: 1,
+            name: " VALENTINO LOVE CELEBRATION MINI DRESS BLACK ",
+            availability: true,
+            brand: 'Valentino',
+            price: 386,
+            sale: 3,
+            img: "valentino-product1.jpg"
+
+          },
+          {
+            id: 2,
+            name: "Valentino Floral Silk Midi Dress Multi Pattern Women's Clothing Dresses Cocktail",
+            availability: true,
+            brand: 'valentino',
+            price: 532,
+            img: "valentino-product2.jpg"
+
+          },
+          {
+            id: 3,
+            name: "Valentino Beige Silk Pleated Sleeveless Maxi Dress M",
+            availability: true,
+            brand: 'valentino',
+            price: 452,
+            img: "valentino-product3.jpg"
+
+          },
+          {
+            id: 4,
+            name: "Valentino Tie-Neck Rose-Embroidered Lace Bodice Dress",
+            availability: true,
+            brand: 'valentino',
+            price: 190,
+            img: "valentino-product4.jpg"
+
+          }
+        ]
+      },
+      diorWomans: {
+        title: 'Dior Womans',
+        imgFolder: 'dior',
+        productsItems: [
+          {
+            id: 1,
+            name: "Christian Dior Couture Show",
+            availability: true,
+            brand: 'dior',
+            price: 386,
+            sale: 3,
+            img: "dior-product1.jpg"
+
+          },
+          {
+            id: 2,
+            name: "Special Section Dior Clothing Womens",
+            availability: true,
+            brand: 'dior',
+            price: 532,
+            img: "dior-product2.jpg"
+
+          },
+          {
+            id: 3,
+            name: "Pin On My Interior Design Created",
+            availability: true,
+            brand: 'dior',
+            price: 452,
+            img: "dior-product3.jpg"
+
+          }
+        ]
+      },
+      kids: {
+        title: 'Kids clothes',
+        imgFolder: 'kids',
+        productsItems: [
+          {
+            id: 1,
+            name: "LZH Autumn Christmas Kids Clothes Suit For Boys ",
+            availability: true,
+            brand: 'kids',
+            price: 86,
+            sale: 10,
+            img: "kids-product1.jpg"
+
+          },
+          {
+            id: 2,
+            name: "Kids clothing wholesale children outfits boys summer",
+            availability: true,
+            brand: 'kids',
+            price: 52,
+            img: "kids-product2.jpg"
 
           }
         ]

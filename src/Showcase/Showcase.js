@@ -24,15 +24,15 @@ class Showcase extends React.Component {
                 />
               )
             }} />
-            <Route exact path="/:category/:id" 
-             render={(props) => {
-              return (
-                <CardDetails
-                {...props}
-                  produtctsList={this.props.produtctsList}                  
-                />
-              )
-            }} 
+            <Route exact path="/:category/:id"
+              render={(props) => {
+                return (
+                  <CardDetails
+                    {...props}
+                    produtctsList={this.props.produtctsList}
+                  />
+                )
+              }}
             />
             <Route path="/recommended" render={(props) => {
               return (
@@ -48,8 +48,8 @@ class Showcase extends React.Component {
                 />
               )
             }} />
-            
-            <Route  path="/sportSwearNike" render={(props) => {
+            {/* ----------------------------------------------------------------- */}
+            <Route path="/sportSwearNike" render={(props) => {
               return (
                 <Card
                   produtctsList={this.props.produtctsList.sportSwearNike}
@@ -57,7 +57,6 @@ class Showcase extends React.Component {
                 />
               )
             }} />
-            
             <Route path="/sportSwearAdidas" render={(props) => {
               return (
                 <Card
@@ -73,7 +72,7 @@ class Showcase extends React.Component {
                   category={'sportSwearPuma'}
                 />
               )
-            }} />       
+            }} />
             <Route path="/bossMan" render={(props) => {
               return (
                 <Card
@@ -81,7 +80,7 @@ class Showcase extends React.Component {
                   category={'bossMan'}
                 />
               )
-            }} />   
+            }} />
             <Route path="/guessMan" render={(props) => {
               return (
                 <Card
@@ -89,9 +88,35 @@ class Showcase extends React.Component {
                   category={'guessMan'}
                 />
               )
-            }} />    
-            
-            <Route  component={NotFound} />
+            }} />
+            <Route path="/valentino" render={(props) => {
+              return (
+                <Card
+                  produtctsList={this.props.produtctsList.valentinoWomans}
+                  category={'valentinoWomans'}
+                />
+              )
+            }} />
+            <Route path="/dior" render={(props) => {
+              return (
+                <Card
+                  produtctsList={this.props.produtctsList.diorWomans}
+                  category={'diorWomans'}
+                />
+              )
+            }} />
+            <Route path="/kids" render={(props) => {
+              return (
+                <Card
+                  produtctsList={this.props.produtctsList.kids}
+                  category={'kids'}
+                />
+              )
+            }} />
+
+            {/* ----------------------------------------------------------------- */}
+
+            <Route component={NotFound} />
           </Switch>
         </div>
       </div>
